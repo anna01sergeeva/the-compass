@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Sofia Garcia</title>
+
+    <link rel="stylesheet" href="profile-style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script>
+      // This script runs instantly to prevent the theme flash.
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light"; // Default to light
+        if (savedTheme === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      })();
+    </script>
+  </head>
+
+ <header class="head2">
+      <a href="../index.html">
+        <div class="logo1"><img src="../Images/logo-new.png" /></div>
+      </a>
+      <nav>
+        <ul class="nav-links2">
+          <li><a href="../Online-Courses.html">Online Courses</a></li>
+          <li>
+            <a href="../Foreign-Languages/foreignlanguages.html"
+              >Foreign Languages</a
+            >
+          </li>
+          <li><a href="../About-Us.html">About Us</a></li>
+          <!-- Old button position removed -->
+
+          <li class="theme-toggle-li">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle-checkbox" />
+              <span class="slider">
+                <i class="fas fa-sun"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="profile-v4-wrapper">
+      <a href="../Online-Courses.html#languages" class="profile-back-link">
+        <i class="fas fa-arrow-left"></i> Back to All Languages
+      </a>
+
+      <section class="profile-v4-intro">
+        <h1>Sofia Garcia</h1>
+        <div class="title-flag-container">
+          <p class="profile-title">Professor of Spanish</p>
+          <img src="https://flagcdn.com/es.svg" class="flag-icon" />
+        </div>
+      </section>
+
+      <div class="profile-v4-grid">
+        <div class="profile-v4-left-col">
+          <div class="profile-v4-card image-card">
+            <img
+              src="../Images/Teacher-Faces/sofia-garcia.jpg"
+              alt="Profile picture of Sofia Garcia"
+            />
+            <div class="image-card-overlay">
+              <button class="profile-button" id="scheduleMeetingBtn">
+                Schedule a Meeting
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-v4-card skills-card">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+              <span class="skill-tag">Fluency & Conversational Practice</span>
+              <span class="skill-tag">DELE Exam Prep (A1-C2)</span>
+              <span class="skill-tag">Business Spanish</span>
+              <span class="skill-tag">Latin American Culture</span>
+              <span class="skill-tag">Advanced Grammar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-v4-right-col">
+          <div class="profile-v4-card content-card">
+            <h2>About Me</h2>
+            <p>
+              Hola! I’m Sofia Garcia. My lifelong passion for the Spanish
+              language began with the stories my grandparents would tell,
+              vibrant tales that crossed borders and generations. I was
+              fascinated by how language could be so much more than words—it was
+              music, history, and a connection to a wider world. This
+              fascination led me on an academic and personal journey across
+              Spain and Latin America, and now, it fuels my desire to share its
+              beauty with you. My goal is to transform learning Spanish from a
+              classroom exercise into an exciting cultural adventure. I believe
+              the best way to learn is by doing, which is why I focus on
+              practical, real-world conversation skills from our very first
+              lesson. Whether you're planning a trip, advancing your career, or
+              simply pursuing a new passion, I am here to guide you with
+              patience and enthusiasm, ensuring you feel confident and capable
+              every step of the way.
+            </p>
+          </div>
+
+          <div class="profile-v4-card content-card">
+            <h2>My Teaching Philosophy</h2>
+            <p>
+              I firmly believe that language is a bridge connecting diverse
+              cultures and people. My classroom, whether virtual or in-person,
+              is a dynamic and supportive space designed for exploration and
+              discovery. I foster an immersive and interactive environment where
+              curiosity is celebrated, and students are never afraid to speak,
+              ask questions, or make mistakes. In my view, mistakes are not
+              failures; they are essential stepping stones to fluency.
+            </p>
+          </div>
+
+          <div class="profile-v4-card content-card">
+            <h2>What Students Are Saying</h2>
+
+            <div class="testimonial-v4">
+              <p class="testimonial-text">
+                "I was always nervous about learning a new language as an adult,
+                but Sofia’s classes are the best! She creates such a warm and
+                encouraging atmosphere that I felt comfortable practicing from
+                day one. Her lessons are fun, engaging, and I learned so much
+                more than I ever thought possible in just a few months.
+              </p>
+              <p class="testimonial-author">- Alex, Beginner Student</p>
+            </div>
+
+            <br />
+
+            <div class="testimonial-v4">
+              <p class="testimonial-text">
+                "I needed to improve my Spanish for my career, and Sofia’s
+                Business Spanish course was a game-changer. She tailored the
+                content specifically to my industry. I can now confidently lead
+                meetings with my clients in Latin America."
+              </p>
+              <p class="testimonial-author">- Maria, Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+    <footer class="site-footer2">
+      <div class="footer-container">
+        <div class="footer-column about">
+      <a href="../index.html">
+        <img
+          src="../Images/logo-new.png" 
+          alt="The Compass Logo"
+          class="footer-logo"
+        />
+      </a>
+          <p>
+            Helping students navigate their future and find their true north.
+            Your journey to a successful career starts here.
+          </p>
+          <div class="social-links">
+            <li>
+              <a
+                href="https://www.facebook.com"
+                class="facebook"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" class="twitter" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                class="instagram"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com"
+                class="linkedin"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+
+        <div class="footer-column links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../Online-Courses.html">Online Courses</a></li>
+            <li><a href="../About-Us.html">About Us</a></li>
+            <li><a href="../test.html">Career Test</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>📍 Akti Miaouli 86, Piraeus</li>
+            <li>📞 +30 210 123 4567</li>
+            <li>✉️ hello@thecompass.gr</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 The Compass. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="meetingModal">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+        <h2 class="modal-header">Schedule a Meeting with Sofia Garcia</h2>
+        <form id="meetingForm">
+          <div class="form-group">
+            <label for="studentName">Your Name</label>
+            <input type="text" id="studentName" required />
+          </div>
+          <div class="form-group">
+            <label for="studentEmail">Your Email</label>
+            <input type="email" id="studentEmail" required />
+          </div>
+          <div class="form-group">
+            <label for="meetingDateDisplay">Preferred Date</label>
+            <div class="custom-datepicker-container">
+              <input
+                type="text"
+                id="meetingDateDisplay"
+                placeholder="Select a date"
+                readonly
+                required
+              />
+              <input type="hidden" id="meetingDate" name="meetingDate" />
+              <div class="custom-datepicker" id="datepickerCalendar">
+                <div class="datepicker-header">
+                  <button type="button" class="prev-month">&lt;</button>
+                  <span class="current-month-year"></span>
+                  <button type="button" class="next-month">&gt;</button>
+                </div>
+                <div class="datepicker-grid datepicker-weekdays">
+                  <span>Su</span><span>Mo</span><span>Tu</span><span>We</span
+                  ><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="datepicker-grid datepicker-days"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="meetingMessage">Message</label>
+            <textarea
+              id="meetingMessage"
+              placeholder="What would you like to discuss?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn">Send Request</button>
+          <div id="successMessage">
+            Your meeting request has been sent! We will contact you as soon as
+            possible.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // --- Universal Toggle Switch Script ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleCheckbox = document.getElementById(
+          "theme-toggle-checkbox"
+        );
+        if (!themeToggleCheckbox) return;
+
+        const rootHtmlElement = document.documentElement; // Target the <html> element
+        const themeIcon =
+          themeToggleCheckbox.nextElementSibling.querySelector(".fas");
+
+        const applyTheme = (theme) => {
+          if (theme === "light") {
+            rootHtmlElement.classList.add("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+            themeToggleCheckbox.checked = true;
+          } else {
+            rootHtmlElement.classList.remove("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+            themeToggleCheckbox.checked = false;
+          }
+        };
+
+        themeToggleCheckbox.addEventListener("change", () => {
+          const newTheme = themeToggleCheckbox.checked ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          applyTheme(newTheme);
+        });
+
+        // Sync the checkbox state on load
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+      });
+
+      // --- Modal Form Script ---
+      const openModalBtn = document.getElementById("scheduleMeetingBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const modal = document.getElementById("meetingModal");
+      const meetingForm = document.getElementById("meetingForm");
+      const successMessage = document.getElementById("successMessage");
+
+      openModalBtn.addEventListener("click", () => {
+        modal.style.display = "flex";
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+        successMessage.style.display = "none"; // Hide success message on close
+        meetingForm.reset(); // Reset form fields
+      });
+
+      // Close modal if user clicks outside of the modal content
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          successMessage.style.display = "none";
+          meetingForm.reset();
+        }
+      });
+
+      meetingForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent actual form submission
+        successMessage.style.display = "block";
+
+        // Disable the main button and change its text
+        openModalBtn.disabled = true;
+        openModalBtn.textContent = "Request Sent";
+
+        // Hide the form and show thank you message
+        setTimeout(() => {
+          modal.style.display = "none";
+          successMessage.style.display = "none";
+          meetingForm.reset();
+        }, 2000); // Close modal after 2 seconds
+      });
+
+      // --- Custom Datepicker Script ---
+      const dateDisplay = document.getElementById("meetingDateDisplay");
+      const dateValue = document.getElementById("meetingDate");
+      const calendar = document.getElementById("datepickerCalendar");
+      const monthYearDisplay = calendar.querySelector(".current-month-year");
+      const prevMonthBtn = calendar.querySelector(".prev-month");
+      const nextMonthBtn = calendar.querySelector(".next-month");
+      const daysContainer = calendar.querySelector(".datepicker-days");
+
+      let currentDate = new Date();
+      let currentMonth = currentDate.getMonth();
+      let currentYear = currentDate.getFullYear();
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      function renderCalendar(month, year) {
+        daysContainer.innerHTML = "";
+        monthYearDisplay.textContent = `${monthNames[month]} ${year}`;
+
+        const firstDayOfMonth = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        // Create day cells
+        for (let i = 0; i < firstDayOfMonth; i++) {
+          daysContainer.innerHTML += `<div class="datepicker-day other-month"></div>`;
+        }
+
+        for (let i = 1; i <= daysInMonth; i++) {
+          const day = document.createElement("div");
+          day.className = "datepicker-day";
+          day.textContent = i;
+
+          const today = new Date();
+          if (
+            year === today.getFullYear() &&
+            month === today.getMonth() &&
+            i === today.getDate()
+          ) {
+            day.classList.add("today");
+          }
+
+          day.addEventListener("click", () => {
+            const selectedDate = new Date(year, month, i);
+            // Format for display: October 19, 2025
+            dateDisplay.value = `${monthNames[month]} ${i}, ${year}`;
+            // Format for backend/hidden input: 2025-10-19
+            dateValue.value = `${year}-${String(month + 1).padStart(
+              2,
+              "0"
+            )}-${String(i).padStart(2, "0")}`;
+
+            // Update selected class
+            const currentlySelected = daysContainer.querySelector(".selected");
+            if (currentlySelected)
+              currentlySelected.classList.remove("selected");
+            day.classList.add("selected");
+
+            calendar.style.display = "none";
+          });
+          daysContainer.appendChild(day);
+        }
+      }
+
+      dateDisplay.addEventListener("click", () => {
+        calendar.style.display =
+          calendar.style.display === "block" ? "none" : "block";
+      });
+
+      prevMonthBtn.addEventListener("click", () => {
+        currentMonth--;
+        if (currentMonth < 0) {
+          currentMonth = 11;
+          currentYear--;
+        }
+        renderCalendar(currentMonth, currentYear);
+      });
+
+      nextMonthBtn.addEventListener("click", () => {
+        currentMonth++;
+        if (currentMonth > 11) {
+          currentMonth = 0;
+          currentYear++;
+        }
+        renderCalendar(currentMonth, currentYear);
+      });
+
+      // Close calendar if clicking outside
+      document.addEventListener("click", (event) => {
+        if (!calendar.contains(event.target) && event.target !== dateDisplay) {
+          calendar.style.display = "none";
+        }
+      });
+
+      renderCalendar(currentMonth, currentYear);
+    </script>
+  </body>
+</html>
+ 

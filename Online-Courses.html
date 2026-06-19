@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses - The Compass</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      // This script runs instantly to prevent the theme flash.
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light"; // Default to light
+        if (savedTheme === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      })();
+    </script>
+    <!-- ADDED STYLE TO PREVENT JIGGLE ON LOAD -->
+    <style>
+      /* This new rule prevents the slider from animating on page load */
+      .slider.no-transition::before,
+      .slider.no-transition .fas {
+        transition: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- THEME TOGGLE BUTTON MOVED AND STYLED LIKE THE REFERENCE -->
+
+    <header class="head2">
+      <a href="index.html">
+        <div class="logo1"><img src="Images/logo-new.png" /></div>
+      </a>
+      <nav>
+        <ul class="nav-links2">
+          <li><a href="Online-Courses.html">Online Courses</a></li>
+          <li>
+            <a href="Foreign-Languages/foreignlanguages.html"
+              >Foreign Languages</a>
+          </li>
+          <li><a href="About-Us.html">About Us</a></li>
+          <!-- Old button position removed -->
+
+          <li class="theme-toggle-li">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle-checkbox" />
+              <span class="slider">
+                <i class="fas fa-sun"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <h1>Our Online Courses</h1>
+        <p>Expert-led instruction to guide you toward success.</p>
+      </section>
+
+      <div class="courses-container">
+        <section class="course-category" id="pathways">
+          <h2>Academic Pathways</h2>
+          <div class="slider-wrapper">
+            <div class="slider-track">
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-papadopoulou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Dr. Elena Papadopoulou</h4>
+                  <h5>Ancient Greek</h5>
+                  <p>
+                    Making classical texts accessible and engaging for all
+                    students.
+                  </p>
+                  <a href="teacher-profile.html?id=1" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-georgiou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Nikos Georgiou</h4>
+                  <h5>Physics</h5>
+                  <p>
+                    An engineer turned educator, Nikos breaks down complex
+                    physics concepts.
+                  </p>
+                  <a href="teacher-profile.html?id=2" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-vlachou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Katerina Vlachou</h4>
+                  <h5>Chemistry</h5>
+                  <p>
+                    Focuses on hands-on learning and practical applications of
+                    chemistry.
+                  </p>
+                  <a href="teacher-profile.html?id=3" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-papas.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Alexandros Papas</h4>
+                  <h5>Mathematics</h5>
+                  <p>
+                    Guiding students to master everything from algebra to
+                    calculus with clarity.
+                  </p>
+                  <a href="teacher-profile.html?id=4" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-markou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Foteini Markou</h4>
+                  <h5>History</h5>
+                  <p>
+                    Brings historical events to life with compelling
+                    storytelling and analysis.
+                  </p>
+                  <a href="teacher-profile.html?id=5" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-angeli.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Dr. Maria Angeli</h4>
+                  <h5>Latin</h5>
+                  <p>
+                    Unlocking the structure of the Latin language and its
+                    influence on modern communication.
+                  </p>
+                  <a href="teacher-profile.html?id=6" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-ioannou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Dimitris Ioannou</h4>
+                  <h5>Mathematics</h5>
+                  <p>
+                    Builds strong foundational skills and problem-solving
+                    confidence.
+                  </p>
+                  <a href="teacher-profile.html?id=7" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="course-category" id="examination">
+          <h2>Panhellenic Preparation</h2>
+          <div class="slider-wrapper">
+            <div class="slider-track">
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-zografou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Sofia Zografou</h4>
+                  <h5>Humanities</h5>
+                  <h5 class="subject-title">
+                    Modern Greek Language & Literature
+                  </h5>
+                  <p>
+                    Expert analysis of literature and essay writing techniques
+                    for top scores in Modern Greek.
+                  </p>
+                  <a href="teacher-profile.html?id=8" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-anastasiou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>George Anastasiou</h4>
+                  <h5>Sciences</h5>
+                  <h5 class="subject-title">Mathematics</h5>
+                  <p>
+                    Targeted exercises and methodologies for top scores in
+                    mathematics.
+                  </p>
+                  <a href="teacher-profile.html?id=9" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-constantinou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Eleni Constantinou</h4>
+                  <h5>Health Sciences</h5>
+                  <h5 class="subject-title">Physics</h5>
+                  <p>
+                    Breaking down complex physics phenomena and mastering
+                    problem-solving for the Health Sciences field.
+                  </p>
+                  <a href="teacher-profile.html?id=10" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-nikolaou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Christos Nikolaou</h4>
+                  <h5>Economics & Computer Science</h5>
+                  <h5 class="subject-title">Computer Science & Economics</h5>
+                  <p>
+                    Focusing on algorithmic thinking for Computer Science and
+                    core principles for Economics.
+                  </p>
+                  <a href="teacher-profile.html?id=11" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-petridou.png"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Anna Petridou</h4>
+                  <h5>Humanities</h5>
+                  <h5 class="subject-title">History</h5>
+                  <p>
+                    Developing critical analysis of historical sources and
+                    effective memorization strategies.
+                  </p>
+                  <a href="teacher-profile.html?id=12" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-theodorou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Vasilis Theodorou</h4>
+                  <h5>Humanities</h5>
+                  <h5 class="subject-title">Latin</h5>
+                  <p>
+                    In-depth grammatical analysis and translation techniques for
+                    excelling in Latin.
+                  </p>
+                  <a href="teacher-profile.html?id=13" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-sotiropoulou.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Marina Sotiropoulou</h4>
+                  <h5>Health Sciences</h5>
+                  <h5 class="subject-title">Chemistry</h5>
+                  <p>
+                    Mastering organic and inorganic chemistry concepts required
+                    for Health Sciences.
+                  </p>
+                  <a href="teacher-profile.html?id=14" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-kallis.jpg"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Yiannis Kallis</h4>
+                  <h5>Humanities</h5>
+                  <h5 class="subject-title">Ancient Greek</h5>
+                  <p>
+                    Expert guidance on translating and analyzing complex Ancient
+                    Greek texts.
+                  </p>
+                  <a href="teacher-profile.html?id=15" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+
+              <div class="teacher-card">
+                <img
+                  src="Images/Teacher-Faces/teacher-michaelides.png"
+                  alt="Teacher"
+                />
+                <div class="card-content">
+                  <h4>Stefanos Michaelides</h4>
+                  <h5>Health Sciences</h5>
+                  <h5 class="subject-title">Biology</h5>
+                  <p>
+                    Covering the entire Panhellenic biology syllabus with a
+                    focus on critical thinking questions.
+                  </p>
+                  <a href="teacher-profile.html?id=16" class="btn-learn-more"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="slider-btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="course-category" id="languages">
+          <h2>Foreign Languages</h2>
+          <a href="Foreign-Languages-Profiles/sofia-garcia-profile.html">
+          <div class="parallax-grid">
+            <div class="parallax-card">
+              <img
+                class="card-image"
+                src="Images/Teacher-Faces/sofia-garcia.jpg"
+                alt="Spanish Instructor"
+              />
+              <div class="card-content">
+                <h4 class="card-title">Spanish</h4>
+                <div class="card-body">
+                  <h5>
+                    <img src="https://flagcdn.com/es.svg" class="flag-icon" />
+                    Sofia Garcia
+                  </h5>
+                  <p>
+                    Learn one of the world's most spoken languages through
+                    interactive and engaging lessons.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </a>
+
+            <a href="Foreign-Languages-Profiles/isabelle-dubois-profile.html">
+            <div class="parallax-card">
+              <img
+                class="card-image"
+                src="Images/Teacher-Faces/isabelle-dubois.jpg"
+                alt="French Instructor"
+              />
+              <div class="card-content">
+                <h4 class="card-title">French</h4>
+                <div class="card-body">
+                  <h5>
+                    <img src="https://flagcdn.com/fr.svg" class="flag-icon" />
+                    Isabelle Dubois
+                  </h5>
+                  <p>
+                    Isabelle brings the culture of France into her lessons,
+                    making learning immersive and fun.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </a>
+
+            <a href="Foreign-Languages-Profiles/klaus-schmidt-profile.html">
+            <div class="parallax-card">
+              <img
+                class="card-image"
+                src="Images//Teacher-Faces/klaus-schmidt.jpg"
+                alt="German Instructor"
+              />
+              <div class="card-content">
+                <h4 class="card-title">German</h4>
+                <div class="card-body">
+                  <h5>
+                    <img src="https://flagcdn.com/de.svg" class="flag-icon" />
+                    Klaus Schmidt
+                  </h5>
+                  <p>
+                    Unlock opportunities with our structured German courses,
+                    focusing on conversational fluency.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </a>
+
+            <a href="Foreign-Languages-Profiles/marco-conti-profile.html">
+            <div class="parallax-card">
+              <img
+                class="card-image"
+                src="Images/Teacher-Faces/marco-conti.jpg"
+                alt="Italian Instructor"
+              />
+              <div class="card-content">
+                <h4 class="card-title">Italian</h4>
+                <div class="card-body">
+                  <h5>
+                    <img src="https://flagcdn.com/it.svg" class="flag-icon" />
+                    Marco Conti
+                  </h5>
+                  <p>
+                    Experience the beauty of the Italian language and culture
+                    with our passionate native instructors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </section>
+      </div>
+      <footer class="site-footer2">
+        <div class="footer-container">
+          <div class="footer-column about">
+            <a href="index.html">
+              <img
+                src="Images/logo-new.png"
+                alt="The Compass Logo"
+                class="footer-logo"
+              />
+            </a>
+            <p>
+              Helping students navigate their future and find their true north.
+              Your journey to a successful career starts here.
+            </p>
+            <div class="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  class="facebook"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com"
+                  class="twitter"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  class="instagram"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com"
+                  class="linkedin"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </div>
+          </div>
+
+          <div class="footer-column links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="Online-Courses.html">Online Courses</a></li>
+              <li><a href="About-Us.html">About Us</a></li>
+              <li><a href="test.html">Career Test</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>📍 Akti Miaouli 86, Piraeus</li>
+              <li>📞 +30 210 123 4567</li>
+              <li>✉️ hello@thecompass.gr</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 The Compass. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+     <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const allSliders = document.querySelectorAll(".slider-wrapper");
+
+        allSliders.forEach((sliderWrapper) => {
+          const track = sliderWrapper.querySelector(".slider-track");
+          const prevButton = sliderWrapper.querySelector(".slider-btn.prev");
+          const nextButton = sliderWrapper.querySelector(".slider-btn.next");
+          const cards = [...track.children];
+
+          if (cards.length === 0) return;
+
+          const cardsPerPage = 4;
+          let currentIndex = 0;
+
+          function updateSlider() {
+            // --- START OF NEW LOGIC ---
+            // Get the current width of the container and the gap between cards
+            const sliderWidth = sliderWrapper.offsetWidth;
+            const gap = parseInt(window.getComputedStyle(track).gap) || 30;
+
+            // Calculate the exact width each card needs to be to fit 4 perfectly
+            const cardWidth =
+              (sliderWidth - gap * (cardsPerPage - 1)) / cardsPerPage;
+
+            // Apply this new width to every card in the slider
+            cards.forEach((card) => {
+              card.style.width = `${cardWidth}px`;
+            });
+            // --- END OF NEW LOGIC ---
+
+            // Calculate how far to move the track based on the new card width
+            const moveDistance = (cardWidth + gap) * currentIndex;
+
+            track.style.transform = `translateX(-${moveDistance}px)`;
+            updateButtons();
+          }
+
+          function updateButtons() {
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex >= cards.length - cardsPerPage;
+          }
+
+          nextButton.addEventListener("click", () => {
+            if (currentIndex < cards.length - cardsPerPage) {
+              currentIndex++;
+              updateSlider();
+            }
+          });
+
+          prevButton.addEventListener("click", () => {
+            if (currentIndex > 0) {
+              currentIndex--;
+              updateSlider();
+            }
+          });
+
+          // Run the function once on load and again whenever the window is resized
+          updateSlider();
+          window.addEventListener("resize", updateSlider);
+        });
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        if (backToTopBtn) { // Check if the button exists on this page
+          
+          // Show or hide the button based on scroll position
+          const handleScroll = () => {
+            if (window.scrollY > 300 || document.documentElement.scrollTop > 300) {
+              backToTopBtn.classList.add("show");
+            } else {
+              backToTopBtn.classList.remove("show");
+            }
+          };
+
+          // Smooth scroll to top when button is clicked
+          const scrollToTop = () => {
+            window.scrollTo({
+              top: 0,
+      
+              behavior: "smooth",
+            });
+          };
+
+          // Add event listeners
+          window.addEventListener("scroll", handleScroll);
+          backToTopBtn.addEventListener("click", scrollToTop);
+        }
+      });
+    </script>
+    
+    <!-- SCRIPT FOR DARK THEME TOGGLE (UPDATED) -->
+    <script>
+      // --- UPDATED Universal Toggle Switch Script ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleCheckbox = document.getElementById(
+          "theme-toggle-checkbox"
+        );
+        if (!themeToggleCheckbox) return;
+
+        const rootHtmlElement = document.documentElement; // Target the <html> element
+        const sliderSpan = themeToggleCheckbox.nextElementSibling; // The <span class="slider">
+        const themeIcon = sliderSpan.querySelector(".fas");
+
+        const applyTheme = (theme, isInitialLoad = false) => {
+          
+          if (isInitialLoad) {
+            // 1. Add class to disable transitions
+            sliderSpan.classList.add('no-transition');
+          }
+
+          // 2. Apply the theme and check the box
+          if (theme === "light") {
+            rootHtmlElement.classList.add("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+            themeToggleCheckbox.checked = true;
+          } else {
+            rootHtmlElement.classList.remove("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+            themeToggleCheckbox.checked = false;
+          }
+
+          if (isInitialLoad) {
+            // 3. Use setTimeout to remove the class after the browser has applied the changes
+            // This re-enables transitions for future user clicks
+            setTimeout(() => {
+              sliderSpan.classList.remove('no-transition');
+            }, 50); // 50ms is a safe delay
+          }
+        };
+
+        // This runs when the user *clicks* the toggle
+        themeToggleCheckbox.addEventListener("change", () => {
+          const newTheme = themeToggleCheckbox.checked ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          applyTheme(newTheme, false); // Pass false, so transitions *do* run
+        });
+
+        // This runs on page load
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme, true); // Pass true to disable initial transition
+      });
+    </script>
+  </body>
+</html>

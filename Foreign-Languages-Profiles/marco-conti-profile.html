@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Marco Conti</title>
+    <link rel="stylesheet" href="profile-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        if (savedTheme === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="head2">
+      <a href="../index.html">
+        <div class="logo1"><img src="../Images/logo-new.png" /></div>
+      </a>
+      <nav>
+        <ul class="nav-links2">
+          <li><a href="../Online-Courses.html">Online Courses</a></li>
+          <li>
+            <a href="../Foreign-Languages/foreignlanguages.html"
+              >Foreign Languages</a
+            >
+          </li>
+          <li><a href="../About-Us.html">About Us</a></li>
+          <li class="theme-toggle-li">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle-checkbox" />
+              <span class="slider">
+                <i class="fas fa-sun"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="profile-v4-wrapper">
+      <a href="../Online-Courses.html#languages" class="profile-back-link">
+        <i class="fas fa-arrow-left"></i> Back to All Languages
+      </a>
+      <section class="profile-v4-intro">
+        <h1>Marco Conti</h1>
+        <div class="title-flag-container">
+          <p class="profile-title">Professor of Italian</p>
+          <img src="https://flagcdn.com/it.svg" class="flag-icon" />
+        </div>
+      </section>
+
+      <div class="profile-v4-grid">
+        <div class="profile-v4-left-col">
+          <div class="profile-v4-card image-card">
+            <img
+              src="../Images/Teacher-Faces/marco-conti.jpg"
+              alt="Profile picture of Marco Conti"
+            />
+            <div class="image-card-overlay">
+              <button class="profile-button" id="scheduleMeetingBtn">
+                Schedule a Meeting
+              </button>
+            </div>
+          </div>
+          <div class="profile-v4-card skills-card">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+              <span class="skill-tag">Conversational Italian</span>
+              <span class="skill-tag">CILS/CELI Exam Prep</span>
+              <span class="skill-tag">Italian Opera & Music</span>
+              <span class="skill-tag">Renaissance Art History</span>
+              <span class="skill-tag">Regional Italian Cuisine</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-v4-right-col">
+          <div class="profile-v4-card content-card">
+            <h2>About Me</h2>
+            <p>
+              Ciao! I am Marco Conti. For me, the Italian language is the key to
+              unlocking "la dolce vita." Born and raised in Florence, I was
+              surrounded by the art of Michelangelo and the poetry of Dante. My
+              lessons are more than just vocabulary; they are an immersion into
+              the passion, flavors, and melodies of Italy. I bring the warmth of
+              an Italian piazza to our class, where we explore everything from
+              Renaissance art to the perfect espresso.
+            </p>
+          </div>
+          <div class="profile-v4-card content-card">
+            <h2>My Teaching Philosophy</h2>
+            <p>
+              I believe that to truly learn Italian, one must live it. My
+              teaching philosophy is built on the concept of "lingua e
+              cultura"—language and culture are inseparable. We learn by
+              discussing, tasting, and listening. My classroom is a lively,
+              expressive space where students are encouraged to speak with their
+              hands as much as their mouths! We focus on communication and
+              connection, ensuring you can not only navigate Italy with ease but
+              also appreciate the beauty of its everyday life.
+            </p>
+          </div>
+          <div class="profile-v4-card content-card">
+            <h2>What Students Are Saying</h2>
+            <div class="testimonial-v4">
+              <p class="testimonial-text">
+                "Marco's passion is infectious! Learning Italian with him felt
+                less like a class and more like a cultural journey. His lessons
+                on art history and food were my favorite part. I'm so much more
+                prepared for my trip to Tuscany now!"
+              </p>
+              <p class="testimonial-author">- Emily, Art History Enthusiast</p>
+            </div>
+            <br />
+            <div class="testimonial-v4">
+              <p class="testimonial-text">
+                "An incredible teacher who makes grammar feel intuitive and
+                natural. Marco doesn't just teach rules; he teaches you how to
+                express yourself. His CILS preparation was instrumental in
+                helping me pass my exam with top marks."
+              </p>
+              <p class="testimonial-author">- Michael, CILS B2 Candidate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer2">
+  <div class="footer-container">
+    <div class="footer-column about">
+      <a href="../index.html"> <img
+          src="../Images/logo-new.png" 
+          alt="The Compass Logo"
+          class="footer-logo"
+        />
+      </a>
+      <p>
+        Helping students navigate their future and find their true north.
+        Your journey to a successful career starts here.
+      </p>
+      <div class="social-links">
+        <ul style="list-style: none; display: flex; gap: 15px; padding: 0;">
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-column links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../Online-Courses.html">Online Courses</a></li>
+        <li><a href="../About-Us.html">About Us</a></li>
+        <li><a href="../test.html">Career Test</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>📍 Akti Miaouli 86, Piraeus</li>
+        <li>📞 +30 210 123 4567</li>
+        <li>✉️ hello@thecompass.gr</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Compass. All Rights Reserved.</p>
+  </div>
+</footer>
+    <div class="modal-overlay" id="meetingModal">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+        <h2 class="modal-header">Schedule a Meeting with Marco Conti</h2>
+        <form id="meetingForm">
+          <div class="form-group">
+            <label for="studentName">Your Name</label>
+            <input type="text" id="studentName" required />
+          </div>
+          <div class="form-group">
+            <label for="studentEmail">Your Email</label>
+            <input type="email" id="studentEmail" required />
+          </div>
+          <div class="form-group">
+            <label for="meetingDateDisplay">Preferred Date</label>
+            <div class="custom-datepicker-container">
+              <input
+                type="text"
+                id="meetingDateDisplay"
+                placeholder="Select a date"
+                readonly
+                required
+              />
+              <input type="hidden" id="meetingDate" name="meetingDate" />
+              <div class="custom-datepicker" id="datepickerCalendar">
+                <div class="datepicker-header">
+                  <button type="button" class="prev-month">&lt;</button>
+                  <span class="current-month-year"></span>
+                  <button type="button" class="next-month">&gt;</button>
+                </div>
+                <div class="datepicker-grid datepicker-weekdays">
+                  <span>Su</span><span>Mo</span><span>Tu</span><span>We</span
+                  ><span>Th</span><span>Fr</span><span>Sa</span>
+                </div>
+                <div class="datepicker-grid datepicker-days"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="meetingMessage">Message</label>
+            <textarea
+              id="meetingMessage"
+              placeholder="What would you like to discuss?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn">Send Request</button>
+          <div id="successMessage">
+            Your meeting request has been sent! We will contact you as soon as
+            possible.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // --- Universal Toggle Switch Script ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleCheckbox = document.getElementById("theme-toggle-checkbox");
+        if (!themeToggleCheckbox) return;
+
+        const rootHtmlElement = document.documentElement;
+        const themeIcon = themeToggleCheckbox.parentElement.querySelector(".slider i");
+
+        const applyTheme = (theme) => {
+          if (theme === "light") {
+            rootHtmlElement.classList.add("light-theme");
+            themeToggleCheckbox.checked = true;
+            if (themeIcon) {
+              themeIcon.classList.remove("fa-moon");
+              themeIcon.classList.add("fa-sun");
+            }
+          } else {
+            rootHtmlElement.classList.remove("light-theme");
+            themeToggleCheckbox.checked = false;
+            if (themeIcon) {
+              themeIcon.classList.remove("fa-sun");
+              themeIcon.classList.add("fa-moon");
+            }
+          }
+        };
+
+        themeToggleCheckbox.addEventListener("change", () => {
+          const newTheme = themeToggleCheckbox.checked ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          applyTheme(newTheme);
+        });
+
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        applyTheme(savedTheme);
+      });
+
+      // --- Modal Form Script ---
+      const openModalBtn = document.getElementById("scheduleMeetingBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const modal = document.getElementById("meetingModal");
+      const meetingForm = document.getElementById("meetingForm");
+      const successMessage = document.getElementById("successMessage");
+
+      if (openModalBtn) {
+        openModalBtn.addEventListener("click", () => {
+          modal.style.display = "flex";
+        });
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+          successMessage.style.display = "none";
+          meetingForm.reset();
+        });
+      }
+
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          successMessage.style.display = "none";
+          meetingForm.reset();
+        }
+      });
+
+      if (meetingForm) {
+        meetingForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          successMessage.style.display = "block";
+          openModalBtn.disabled = true;
+          openModalBtn.textContent = "Request Sent";
+          setTimeout(() => {
+            modal.style.display = "none";
+            successMessage.style.display = "none";
+            meetingForm.reset();
+          }, 2000);
+        });
+      }
+
+      // --- Custom Datepicker Script ---
+      const dateDisplay = document.getElementById("meetingDateDisplay");
+      const dateValue = document.getElementById("meetingDate");
+      const calendar = document.getElementById("datepickerCalendar");
+
+      if (dateDisplay && calendar) {
+        const monthYearDisplay = calendar.querySelector(".current-month-year");
+        const prevMonthBtn = calendar.querySelector(".prev-month");
+        const nextMonthBtn = calendar.querySelector(".next-month");
+        const daysContainer = calendar.querySelector(".datepicker-days");
+
+        let currentDate = new Date();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        function renderCalendar(month, year) {
+          daysContainer.innerHTML = "";
+          monthYearDisplay.textContent = `${monthNames[month]} ${year}`;
+          const firstDayOfMonth = new Date(year, month, 1).getDay();
+          const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+          for (let i = 0; i < firstDayOfMonth; i++) {
+            daysContainer.innerHTML += `<div class="datepicker-day other-month"></div>`;
+          }
+
+          for (let i = 1; i <= daysInMonth; i++) {
+            const day = document.createElement("div");
+            day.className = "datepicker-day";
+            day.textContent = i;
+            const today = new Date();
+            if (year === today.getFullYear() && month === today.getMonth() && i === today.getDate()) {
+              day.classList.add("today");
+            }
+            day.addEventListener("click", () => {
+              dateDisplay.value = `${monthNames[month]} ${i}, ${year}`;
+              dateValue.value = `${year}-${String(month + 1).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
+              const currentlySelected = daysContainer.querySelector(".selected");
+              if (currentlySelected) currentlySelected.classList.remove("selected");
+              day.classList.add("selected");
+              calendar.style.display = "none";
+            });
+            daysContainer.appendChild(day);
+          }
+        }
+
+        dateDisplay.addEventListener("click", () => {
+          calendar.style.display = calendar.style.display === "block" ? "none" : "block";
+        });
+
+        prevMonthBtn.addEventListener("click", () => {
+          currentMonth--;
+          if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+          renderCalendar(currentMonth, currentYear);
+        });
+
+        nextMonthBtn.addEventListener("click", () => {
+          currentMonth++;
+          if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+          renderCalendar(currentMonth, currentYear);
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!calendar.contains(event.target) && event.target !== dateDisplay) {
+            calendar.style.display = "none";
+          }
+        });
+
+        renderCalendar(currentMonth, currentYear);
+      }
+    </script>
+  </body>
+</html>
