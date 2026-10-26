@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foreign Languages</title>
+    <link rel="stylesheet" href="language-style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme flash prevention -->
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light";
+        if (savedTheme === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header class="head2">
+      <a href="../index.html">
+        <div class="logo1"><img src="../Images/logo-new.png" alt="The Compass Logo"/></div>
+      </a>
+      <nav>
+        <ul class="nav-links2">
+          <li><a href="../Online-Courses.html">Online Courses</a></li>
+          <li><a href="foreignlanguages.html">Foreign Languages</a></li>
+          <li><a href="../About-Us.html">About Us</a></li>
+          <li class="theme-toggle-li">
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle-checkbox" />
+              <span class="slider"><i class="fas fa-sun"></i></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="do-you">
+      <h1>Do you want to start a new language?</h1>
+      <p>The road to success begins with the right learning.</p>
+    </div>
+
+    <main>
+      <section class="about-us">
+        <h2>The Compass Language</h2>
+        <p>
+          Our company gives you the opportunity to start learning a new foreign
+          language with the guidance of experienced and qualified professionals,
+          through the most engaging and modern learning methods. You can also
+          discover your current language level from your laptop or mobile device
+          with just a few clicks.
+        </p>
+      </section>
+
+      <section class="languages">
+        <h2>Languages We Offer & Level Tests</h2>
+        <p>Discover Your Level: A1, A2 or B1+</p>
+        <div class="language-grid">
+          <div class="language-card">
+            <h3>French</h3>
+            <p>Discover the charm of language and culture.</p>
+            <a href="french.html" class="test-link">Start</a>
+          </div>
+          <div class="language-card">
+            <h3>German</h3>
+            <p>Learn the language of technology, philosophy, and business</p>
+            <a href="german.html" class="test-link">Start</a>
+          </div>
+          <div class="language-card">
+            <h3>Italian</h3>
+            <p>Travel into the world of art, music, and gastronomy</p>
+            <a href="italian.html" class="test-link">Start</a>
+          </div>
+          <div class="language-card">
+            <h3>Spanish</h3>
+            <p>Speak one of the most widely spoken languages in the world</p>
+            <a href="spanish.html" class="test-link">Start</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column about">
+          <a href="../index.html">
+            <img src="../Images/logo-new.png" alt="The Compass Logo" class="footer-logo" />
+          </a>
+          <p>
+            Helping students navigate their future and find their true north.
+            Your journey to a successful career starts here.
+          </p>
+        </div>
+
+        <div class="footer-column links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../Online-Courses.html">Online Courses</a></li>
+            <li><a href="../About-Us.html">About Us</a></li>
+            <li><a href="../test.html">Career Test</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>📍 Akti Miaouli 86, Piraeus</li>
+            <li>📞 +30 210 123 4567</li>
+            <li>✉️ hello@thecompass.gr</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 The Compass. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="main-script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleCheckbox = document.getElementById("theme-toggle-checkbox");
+        if (!themeToggleCheckbox) return;
+
+        const rootHtmlElement = document.documentElement;
+        const themeIcon = themeToggleCheckbox.nextElementSibling.querySelector(".fas");
+
+        const applyTheme = (theme) => {
+          if (theme === "light") {
+            rootHtmlElement.classList.add("light-theme");
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+            themeToggleCheckbox.checked = true;
+          } else {
+            rootHtmlElement.classList.remove("light-theme");
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+            themeToggleCheckbox.checked = false;
+          }
+        };
+
+        themeToggleCheckbox.addEventListener("change", () => {
+          const newTheme = themeToggleCheckbox.checked ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          applyTheme(newTheme);
+        });
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        if (backToTopBtn) {
+          const handleScroll = () => {
+            if (window.scrollY > 300) {
+              backToTopBtn.classList.add("show");
+            } else {
+              backToTopBtn.classList.remove("show");
+            }
+          };
+          const scrollToTop = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          };
+          window.addEventListener("scroll", handleScroll);
+          backToTopBtn.addEventListener("click", scrollToTop);
+        }
+      });
+    </script>
+  </body>
+</html>

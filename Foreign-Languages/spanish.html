@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spanish Language Level Test</title>
+    <link rel="stylesheet" href="language-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // This script runs instantly to prevent the theme flash.
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "light"; // Default to light
+        if (savedTheme === "light") {
+          document.documentElement.classList.add("light-theme");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <li class="theme-toggle-li2">
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle-checkbox" />
+        <span class="slider">
+          <i class="fas fa-sun"></i>
+        </span>
+      </label>
+    </li>
+    <a href="foreignlanguages.html" class="home-link nav-btn">Main Page</a>
+
+    <main id="spanish-quiz" class="quiz-container">
+      <div id="quiz">
+        <div class="quiz-header">
+          <h2 id="question-text">
+            Welcome to the Spanish Language Level Test!
+          </h2>
+          <p>Answer the questions below to evaluate your knowledge.</p>
+        </div>
+        <div id="answer-options" class="answer-options"></div>
+        <div class="quiz-footer">
+          <button id="start-btn" class="nav-btn">Start</button>
+          <div class="progress-info">
+            <button
+              id="prev-btn"
+              class="nav-btn secondary-btn"
+              style="display: none"
+            >
+              Back
+            </button>
+            <div class="progress-bar-container">
+              <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <span id="question-counter"></span>
+            <button id="next-btn" class="nav-btn" style="display: none">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="results" class="results-container" style="display: none">
+        <h2>Your Results!</h2>
+        <div id="results-content"></div>
+        <div class="results-footer">
+          <button id="restart-btn" class="nav-btn">Restart Test</button>
+          <a href="../Online-Courses.html" class="nav-btn"
+            >Check Online Courses</a
+          >
+        </div>
+      </div>
+    </main>
+    <script src="main-script.js"></script>
+    <script>
+      // --- FINAL Universal Toggle Switch Script ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeToggleCheckbox = document.getElementById(
+          "theme-toggle-checkbox"
+        );
+        if (!themeToggleCheckbox) return;
+
+        const rootHtmlElement = document.documentElement; // Target the <html> element
+        const themeIcon =
+          themeToggleCheckbox.nextElementSibling.querySelector(".fas");
+
+        const applyTheme = (theme) => {
+          if (theme === "light") {
+            rootHtmlElement.classList.add("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+            themeToggleCheckbox.checked = true;
+          } else {
+            rootHtmlElement.classList.remove("light-theme"); // Apply to <html>
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+            themeToggleCheckbox.checked = false;
+          }
+        };
+
+        themeToggleCheckbox.addEventListener("change", () => {
+          const newTheme = themeToggleCheckbox.checked ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          applyTheme(newTheme);
+        });
+
+        // Sync the checkbox state on load
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+      });
+    </script>
+  </body>
+</html>
